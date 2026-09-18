@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dherick Salvacion</title>
+    <style>
+        :root {
+            --bg: #000f;
+            --ink: #1c2430;
+            --muted: #6b7078;
+            --accent: #3d6e63;
+            --line: #dedad0;
+            --bg-dark: #14181d;
+            --ink-dark: #eceae4;
+            --muted-dark: #9a9d9f;
+            --accent-dark: #7fb3a4;
+            --line-dark: #eceae4;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --bg: var(--bg-dark);
+                --ink: var(--ink-dark);
+                --muted: var(--muted-dark);
+                --accent: var(--accent-dark);
+                --line: var(--line-dark);
+            }
+        }
+
+        :root[data-theme="dark"] {
+            --bg: var(--bg-dark);
+            --ink: var(--ink-dark);
+            --muted: var(--muted-dark);
+            --accent: var(--accent-dark);
+            --line: var(--line-dark);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: 'IBM Plex Sans', system-ui, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin: 0;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        .wrap {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header.hero {
+            padding: 96px 0 64px;
+            border-bottom: 1px solid var(--line);
+        }
+
+            header.hero h1 {
+                font-size: clamp(2.2rem, 5vw, 3.2rem);
+                line-height: 1.1;
+            }
+
+            header.hero p.role {
+                margin-top: 12px;
+                font-size: 1.1rem;
+                color: var(--muted);
+            }
+
+            header.hero p.bio {
+                margin-top: 28px;
+                max-width: 54ch;
+                font-size: 1.05rem;
+            }
+
+        .links {
+            margin-top: 28px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+            .links a {
+                text-decoration: none;
+                border-bottom: 1px solid var(--accent);
+                padding-bottom: 2px;
+            }
+
+        section {
+            padding: 56px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+            section:last-of-type {
+                border-bottom: none;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 24px;
+            }
+
+        .project {
+            padding: 20px 0;
+            border-top: 1px solid var(--line);
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+            .project:first-of-type {
+                border-top: none;
+            }
+
+            .project h3 {
+                margin: 0 0 6px;
+                font-size: 1.05rem;
+                font-weight: 500;
+            }
+
+            .project p {
+                margin: 0;
+                color: var(--muted);
+                max-width: 46ch;
+            }
+
+            .project a {
+                text-decoration: none;
+                white-space: nowrap;
+                align-self: flex-start;
+            }
+
+        footer {
+            padding: 40px 0 80px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            header.hero {
+                padding: 64px 0 40px;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <header class="hero">
+            <h1>Dherick D. Salvacion</h1>
+            <p class="role">Welcome to my personal site where I share my background and projects!</p>
+            <p class="bio">
+                Nothings here.
+            </p>
+            <div class="links">
+                <a href="https://github.com/DherickSalvacion" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:dherick.salvacion@cvsu.edu.ph">Email</a>
+                <a href="https://www.instagram.com/_tojz_/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </header>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <div>
+                    <h3>One</h3>
+                    <p>Blank.</p>
+                </div>
+                <a href="#" target="_blank" rel="noopener">View →</a>
+            </div>
+
+            <div class="project">
+                <div>
+                    <h3>Two</h3>
+                    <p>Blank.</p>
+                </div>
+                <a href="#" target="_blank" rel="noopener">View →</a>
+            </div>
+
+            <div class="project">
+                <div>
+                    <h3>Three</h3>
+                    <p>Blank.</p>
+                </div>
+                <a href="#" target="_blank" rel="noopener">View →</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                This website is about me and my projects.
+            </p>
+        </section>
+
+        <footer>
+            © 2026 DherickSalvacion.
+        </footer>
+    </div>
+
+    <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
