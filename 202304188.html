@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Student Information</title>
+    </head>
+    <body>
+        <div class="card">
+            <div class="avatar">L</div>
+            <div class="tag">Student Profile</div>
+            <h1>Louise Jayson K. Villanueva</h1>
+            <p class="subtitle">BS in Information Technology</p>
+            <div class="info"><strong>ID:</strong> 202304188</div>
+            <div class="info"><strong>Age:</strong> 21</div>
+            <div class="info"><strong>Course:</strong> Bachelor of Science in Information Technology</div>
+
+            <a class="link" href="https://github.com/zakuweak0823" target="_blank" rel="noreferrer">View GitHub</a>
+        </div>
+    </body>
+    </html>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1d4ed8, #7c3aed);
+            color: #e2e8f0;
+        }
+
+        .card {
+            width: min(92vw, 520px);
+            background: rgba(15, 23, 42, 0.72);
+            border: 1px solid rgba(148, 163, 184, 0.28);
+            border-radius: 24px;
+            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.45);
+            backdrop-filter: blur(12px);
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+            color: white;
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.45);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: rgba(59, 130, 246, 0.18);
+            border: 1px solid rgba(147, 197, 253, 0.4);
+            color: #bfdbfe;
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: #f8fafc;
+        }
+
+        .subtitle {
+            margin: 10px 0 22px;
+            color: #cbd5e1;
+            font-size: 1rem;
+            letter-spacing: 0.04em;
+        }
+
+        .info {
+            margin: 12px 0;
+            padding: 12px 14px;
+            background: rgba(148, 163, 184, 0.08);
+            border-radius: 12px;
+            color: #e2e8f0;
+            border: 1px solid rgba(148, 163, 184, 0.12);
+        }
+
+        .info strong {
+            color: #f8fafc;
+        }
+
+        .link {
+            display: inline-block;
+            margin-top: 18px;
+            text-decoration: none;
+            color: #0f172a;
+            background: linear-gradient(135deg, #f8fafc, #a5f3fc);
+            padding: 11px 20px;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 12px 24px rgba(165, 243, 252, 0.3);
+        }
+
+        .link:hover {
+            transform: translateY(-2px);
+        }
+    </style>
